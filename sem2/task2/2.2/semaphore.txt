@@ -1,0 +1,72 @@
+time ./queue-threads-semaphore                                                                                   ✔ 
+main [13191 7754 13191]
+qmonitor: [13191 7754 13192]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [13191 7754 13193]
+writer [13191 7754 13194]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 8554; attempts: (1193590 1185037 8553); counts (1193590 1185036 8554)
+queue stats: current size 6645; attempts: (2384100 2377456 6644); counts (2384100 2377455 6645)
+queue stats: current size 0; attempts: (3572817 3572818 -1); counts (3572817 3572817 0)
+queue stats: current size 13680; attempts: (4768945 4755266 13679); counts (4768945 4755265 13680)
+queue stats: current size 10737; attempts: (5955471 5944735 10736); counts (5955471 5944734 10737)
+queue stats: current size 3948; attempts: (7138816 7134869 3947); counts (7138816 7134868 3948)
+queue stats: current size 1; attempts: (8319656 8319656 0); counts (8319656 8319655 1)
+queue stats: current size 1; attempts: (9590045 9590045 0); counts (9590045 9590044 1)
+queue stats: current size 0; attempts: (10784624 10784625 -1); counts (10784624 10784624 0)
+queue stats: current size 0; attempts: (11974611 11974612 -1); counts (11974611 11974611 0)
+queue stats: current size 1; attempts: (13159423 13159423 0); counts (13159423 13159422 1)
+queue stats: current size 1; attempts: (14346182 14346182 0); counts (14346182 14346181 1)
+queue stats: current size 6663; attempts: (15531952 15525290 6662); counts (15531952 15525289 6663)
+queue stats: current size 0; attempts: (16702747 16702748 -1); counts (16702747 16702747 0)
+queue stats: current size 0; attempts: (17882584 17882585 -1); counts (17882584 17882584 0)
+queue stats: current size 1726; attempts: (19066037 19064312 1725); counts (19066037 19064311 1726)
+queue stats: current size 0; attempts: (20231171 20231172 -1); counts (20231171 20231171 0)
+queue stats: current size 1; attempts: (21407856 21407856 0); counts (21407856 21407855 1)
+queue stats: current size 1; attempts: (22580626 22580626 0); counts (22580626 22580625 1)
+queue stats: current size 853; attempts: (23753706 23752853 853); counts (23753705 23752852 853)
+queue stats: current size 0; attempts: (24931724 24931725 -1); counts (24931724 24931724 0)
+queue stats: current size 8071; attempts: (26089948 26081878 8070); counts (26089948 26081877 8071)
+queue stats: current size 1; attempts: (27258476 27258476 0); counts (27258476 27258475 1)
+queue stats: current size 2214; attempts: (28433091 28430878 2213); counts (28433091 28430877 2214)
+queue stats: current size 1; attempts: (29610181 29610181 0); counts (29610181 29610180 1)
+queue stats: current size 0; attempts: (30788700 30788701 -1); counts (30788700 30788700 0)
+queue stats: current size 0; attempts: (31954269 31954269 0); counts (31954268 31954268 0)
+queue stats: current size 3722; attempts: (33127715 33123994 3721); counts (33127715 33123993 3722)
+queue stats: current size 8473; attempts: (34278337 34269865 8472); counts (34278337 34269864 8473)
+queue stats: current size 1; attempts: (35450456 35450456 0); counts (35450456 35450455 1)
+queue stats: current size 6002; attempts: (36629156 36623155 6001); counts (36629156 36623154 6002)
+queue stats: current size 1; attempts: (37801133 37801133 0); counts (37801133 37801132 1)
+queue stats: current size 0; attempts: (38977541 38977542 -1); counts (38977541 38977541 0)
+queue stats: current size 1; attempts: (40149208 40149208 0); counts (40149208 40149207 1)
+^C
+./queue-threads-semaphore  16,62s user 17,34s system 99% cpu 34,006 total
+
+    ~/os/sem2/task2/2.2  time ./queue-threads-usleep-semaphore                                                                INT ✘  34s  
+main [13346 7754 13346]
+qmonitor: [13346 7754 13347]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [13346 7754 13348]
+writer [13346 7754 13349]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 0; attempts: (18705 18706 -1); counts (18705 18705 0)
+queue stats: current size 1; attempts: (37449 37449 0); counts (37449 37448 1)
+queue stats: current size 0; attempts: (56156 56157 -1); counts (56156 56156 0)
+queue stats: current size 0; attempts: (74899 74900 -1); counts (74899 74899 0)
+queue stats: current size 0; attempts: (93607 93608 -1); counts (93607 93607 0)
+queue stats: current size 0; attempts: (112363 112364 -1); counts (112363 112363 0)
+queue stats: current size 0; attempts: (131062 131063 -1); counts (131062 131062 0)
+queue stats: current size 0; attempts: (149785 149786 -1); counts (149785 149785 0)
+queue stats: current size 0; attempts: (168525 168526 -1); counts (168525 168525 0)
+queue stats: current size 0; attempts: (187223 187224 -1); counts (187223 187223 0)
+queue stats: current size 0; attempts: (205913 205914 -1); counts (205913 205913 0)
+queue stats: current size 0; attempts: (224586 224587 -1); counts (224586 224586 0)
+queue stats: current size 0; attempts: (243432 243433 -1); counts (243432 243432 0)
+queue stats: current size 0; attempts: (262145 262146 -1); counts (262145 262145 0)
+queue stats: current size 0; attempts: (280824 280825 -1); counts (280824 280824 0)
+queue stats: current size 0; attempts: (299558 299559 -1); counts (299558 299558 0)
+queue stats: current size 0; attempts: (318323 318324 -1); counts (318323 318323 0)
+^C
+./queue-threads-usleep-semaphore  0,48s user 1,73s system 12% cpu 17,632 total

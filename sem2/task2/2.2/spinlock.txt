@@ -1,0 +1,42 @@
+time ./queue-threads-spinlock 
+main [13819 6767 13819]
+qmonitor: [13819 6767 13820]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [13819 6767 13821]
+writer [13819 6767 13822]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 63695; attempts: (26812892 27893103 -1080211); counts (17447563 17383868 63695)
+queue stats: current size 726246; attempts: (56504979 52830465 3674514); counts (36024134 35297888 726246)
+queue stats: current size 993515; attempts: (83564399 78557699 5006700); counts (52883179 51889664 993515)
+queue stats: current size 985711; attempts: (112177205 101090054 11087151); counts (69414700 68428989 985711)
+queue stats: current size 776694; attempts: (137766988 124564172 13202816); counts (85423399 84646705 776694)
+queue stats: current size 687647; attempts: (163986447 150756605 13229842); counts (100811466 100123819 687647)
+queue stats: current size 457391; attempts: (188712048 173802919 14909129); counts (117807289 117349898 457391)
+queue stats: current size 486511; attempts: (215486484 195260637 20225847); counts (133430097 132943586 486511)
+queue stats: current size 440811; attempts: (241888285 218230983 23657302); counts (149221171 148780360 440811)
+queue stats: current size 114848; attempts: (266284141 240921688 25362453); counts (164324024 164209176 114848)
+
+./queue-threads-spinlock  10,55s user 0,03s system 99% cpu 10,599 total
+
+time ./queue-threads-usleep-spinlock 
+main [13903 6767 13903]
+qmonitor: [13903 6767 13904]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [13903 6767 13905]
+writer [13903 6767 13906]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 0; attempts: (385 91652148 -91651763); counts (385 385 0)
+queue stats: current size 0; attempts: (705 183250000 -183249295); counts (705 705 0)
+queue stats: current size 0; attempts: (1052 274907306 -274906254); counts (1052 1052 0)
+queue stats: current size 0; attempts: (1396 366290295 -366288899); counts (1396 1396 0)
+queue stats: current size 0; attempts: (1779 457666022 -457664243); counts (1779 1779 0)
+queue stats: current size 0; attempts: (2145 548795658 -548793513); counts (2145 2145 0)
+queue stats: current size 0; attempts: (2505 640535175 -640532670); counts (2505 2505 0)
+queue stats: current size 0; attempts: (2886 732199445 -732196559); counts (2886 2886 0)
+queue stats: current size 0; attempts: (3213 823131821 -823128608); counts (3213 3213 0)
+queue stats: current size 0; attempts: (3484 913898220 -913894736); counts (3484 3484 0)
+queue stats: current size 0; attempts: (3783 1004364183 -1004360400); counts (3783 3783 0)
+^C
+./queue-threads-usleep-spinlock  11,30s user 0,01s system 99% cpu 11,316 total

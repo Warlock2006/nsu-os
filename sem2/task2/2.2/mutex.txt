@@ -1,0 +1,47 @@
+    ~/os/sem2/task2/2.2  time ./queue-threads-mutex                                                      INT ✘  15s  
+main [14233 6767 14233]
+qmonitor: [14233 6767 14234]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [14233 6767 14235]
+writer [14233 6767 14236]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 97001; attempts: (25515731 36210185 -10694454); counts (25515731 25418730 97001)
+queue stats: current size 77652; attempts: (50629627 71132204 -20502577); counts (50629627 50551975 77652)
+queue stats: current size 92968; attempts: (75662446 104377518 -28715072); counts (75662446 75569478 92968)
+queue stats: current size 96406; attempts: (100539147 136168608 -35629461); counts (100539147 100442741 96406)
+queue stats: current size 69944; attempts: (126092976 169760427 -43667451); counts (126092976 126023032 69944)
+queue stats: current size 59048; attempts: (151706748 204083215 -52376467); counts (151706748 151647700 59048)
+queue stats: current size 53714; attempts: (177423408 238411373 -60987965); counts (177423408 177369694 53714)
+queue stats: current size 52765; attempts: (202605986 271731588 -69125602); counts (202605986 202553221 52765)
+queue stats: current size 103845; attempts: (227773082 304799713 -77026631); counts (227773082 227669237 103845)
+queue stats: current size 109448; attempts: (253145673 338242781 -85097108); counts (253145673 253036225 109448)
+queue stats: current size 34002; attempts: (278047283 370886657 -92839374); counts (278047283 278013281 34002)
+queue stats: current size 5442; attempts: (303075989 403960575 -100884586); counts (303075989 303070547 5442)
+queue stats: current size 153870; attempts: (328032835 436998023 -108965188); counts (328032835 327878965 153870)
+queue stats: current size 22834; attempts: (352826397 469137925 -116311528); counts (352826397 352803563 22834)
+
+./queue-threads-mutex  14,34s user 0,02s system 99% cpu 14,389 total
+
+time ./queue-threads-usleep-mutex                                               INT ✘  14s  
+main [14333 6767 14333]
+qmonitor: [14333 6767 14334]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [14333 6767 14335]
+writer [14333 6767 14336]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 2; attempts: (19831 102401369 -102381538); counts (19831 19829 2)
+queue stats: current size 0; attempts: (39709 204087700 -204047991); counts (39709 39709 0)
+queue stats: current size 0; attempts: (59421 305870665 -305811244); counts (59421 59421 0)
+queue stats: current size 1; attempts: (79349 407363198 -407283849); counts (79349 79348 1)
+queue stats: current size 0; attempts: (99281 508524915 -508425634); counts (99281 99281 0)
+queue stats: current size 0; attempts: (119133 609416020 -609296887); counts (119133 119133 0)
+queue stats: current size 0; attempts: (138961 710302590 -710163629); counts (138961 138961 0)
+queue stats: current size 0; attempts: (158783 811123640 -810964857); counts (158783 158783 0)
+queue stats: current size 0; attempts: (178558 912072702 -911894144); counts (178558 178558 0)
+queue stats: current size 0; attempts: (198405 1013025298 -1012826893); counts (198405 198405 0)
+queue stats: current size 0; attempts: (218037 1113984575 -1113766538); counts (218037 218037 0)
+queue stats: current size 0; attempts: (237833 1214530795 -1214292962); counts (237833 237833 0)
+^C
+./queue-threads-usleep-mutex  11,06s user 0,97s system 97% cpu 12,367 total

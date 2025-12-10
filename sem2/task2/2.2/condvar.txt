@@ -1,0 +1,60 @@
+time ./queue-threads-condvar                                                                         INT ✘  15s  
+main [11894 7754 11894]
+qmonitor: [11894 7754 11895]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [11894 7754 11896]
+writer [11894 7754 11897]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 54727; attempts: (23535958 23481232 54726); counts (23535958 23481231 54727)
+queue stats: current size 157145; attempts: (46919007 46761862 157145); counts (46919007 46761862 157145)
+queue stats: current size 1; attempts: (69900025 69900025 0); counts (69900025 69900024 1)
+queue stats: current size 96143; attempts: (92425929 92329787 96142); counts (92425929 92329786 96143)
+queue stats: current size 35112; attempts: (113802382 113767271 35111); counts (113802382 113767270 35112)
+queue stats: current size 100288; attempts: (134182097 134081809 100288); counts (134182097 134081809 100288)
+queue stats: current size 21426; attempts: (154507828 154486402 21426); counts (154507828 154486402 21426)
+queue stats: current size 60638; attempts: (174904784 174844147 60637); counts (174904784 174844146 60638)
+queue stats: current size 47805; attempts: (194947175 194899371 47804); counts (194947175 194899370 47805)
+queue stats: current size 796791; attempts: (214383632 213586841 796791); counts (214383632 213586841 796791)
+queue stats: current size 951151; attempts: (233981270 233030119 951151); counts (233981270 233030119 951151)
+queue stats: current size 972664; attempts: (252080085 251107421 972664); counts (252080085 251107421 972664)
+queue stats: current size 889583; attempts: (269090418 268200834 889584); counts (269090417 268200834 889583)
+queue stats: current size 979496; attempts: (286292206 285312710 979496); counts (286292206 285312710 979496)
+^C
+./queue-threads-condvar  12,28s user 1,78s system 99% cpu 14,083 total
+
+ time ./queue-threads-usleep-condvar                                                                  INT ✘  14s  
+main [12102 7754 12102]
+qmonitor: [12102 7754 12103]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [12102 7754 12104]
+set_cpu: set cpu 1
+writer [12102 7754 12105]
+set_cpu: set cpu 1
+queue stats: current size 0; attempts: (18733 18734 -1); counts (18733 18733 0)
+queue stats: current size 0; attempts: (37423 37424 -1); counts (37423 37423 0)
+queue stats: current size 0; attempts: (56178 56179 -1); counts (56178 56178 0)
+queue stats: current size 0; attempts: (74799 74800 -1); counts (74799 74799 0)
+queue stats: current size 1; attempts: (93466 93466 0); counts (93466 93465 1)
+queue stats: current size 0; attempts: (112144 112145 -1); counts (112144 112144 0)
+queue stats: current size 0; attempts: (130802 130803 -1); counts (130802 130802 0)
+queue stats: current size 0; attempts: (149546 149547 -1); counts (149546 149546 0)
+queue stats: current size 1; attempts: (168276 168276 0); counts (168276 168275 1)
+queue stats: current size 0; attempts: (186968 186969 -1); counts (186968 186968 0)
+queue stats: current size 0; attempts: (205626 205627 -1); counts (205626 205626 0)
+queue stats: current size 0; attempts: (224315 224316 -1); counts (224315 224315 0)
+queue stats: current size 0; attempts: (243016 243017 -1); counts (243016 243016 0)
+queue stats: current size 0; attempts: (261692 261693 -1); counts (261692 261692 0)
+queue stats: current size 0; attempts: (280366 280367 -1); counts (280366 280366 0)
+queue stats: current size 1; attempts: (299052 299052 0); counts (299052 299051 1)
+queue stats: current size 1; attempts: (317856 317856 0); counts (317856 317855 1)
+queue stats: current size 0; attempts: (336604 336605 -1); counts (336604 336604 0)
+queue stats: current size 0; attempts: (355247 355248 -1); counts (355247 355247 0)
+queue stats: current size 0; attempts: (374077 374078 -1); counts (374077 374077 0)
+queue stats: current size 0; attempts: (392733 392734 -1); counts (392733 392733 0)
+queue stats: current size 1; attempts: (411579 411579 0); counts (411579 411578 1)
+queue stats: current size 0; attempts: (430366 430367 -1); counts (430366 430366 0)
+queue stats: current size 0; attempts: (449159 449160 -1); counts (449159 449159 0)
+queue stats: current size 0; attempts: (467935 467936 -1); counts (467935 467935 0)
+^C
+./queue-threads-usleep-condvar  1,14s user 2,39s system 13% cpu 25,974 total
