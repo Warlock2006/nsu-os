@@ -26,5 +26,6 @@ void mythread_testcancel(void);
 void mythread_cleanup_push(void (*routine)(void *), void *arg);
 void mythread_cleanup_pop(int execute);
 uint64_t mythread_get_id(mythread_t thread);
+void mythread_yield();
 
 #endif
